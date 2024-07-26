@@ -1,0 +1,584 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(83, 185, 244);
+}
+
+p {
+    color: rgb(25, 89, 59);
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img {
+    max-width: 50%;
+    padding: 50px 0;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: rgb(87, 164, 227);
+    color: azure;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: #66ef96;
+}
+
+.header {
+    background: radial-gradient(#fff, #72ecb5);
+}
+
+.header .row {
+    margin-top: 70px;
+}
+
+.categories {
+    margin: 70px 0;
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.small-container {
+    max-width: 1500px;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-4 img {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: rgb(91, 176, 255);
+}
+
+.title::after {
+    content: '';
+    background: #66a5e0;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4 {
+    color: black;
+    font-weight: normal;
+}
+
+.col-4 p {
+    font-size: 14px;
+}
+
+.rating .fa {
+    color: rgb(33, 208, 231);
+}
+.col-4:hover{
+    transform: translateY(-5px);
+}
+
+.offer{
+    background: radial-gradient(#fff, #82d9f3);
+    margin-top: 80px;
+    padding: 30px 0;
+
+}
+.col-2 .offer-img{
+    padding:  50px;
+}
+small{
+    color: rgb(152, 67, 236);
+}
+.testimonnial{
+    padding-top: 100px;
+}
+.testimonnial .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.testimonnial .col-3:hover{
+    transform: translateY(-10px);
+}
+.fa.fa-quote-left{
+    font-size: 34px;
+    color: rgb(25, 89, 59);
+}
+.col-3 p{
+    font-size: 12px;
+    margin: 12px 0;
+    color: rgb(25, 89, 59);
+} 
+.testimonnial .col-3 h3{
+    font-weight: 600;
+    color: rgb(25, 89, 59);
+    font-size: 16px;
+}
+.brands{
+    margin: 100px auto;
+}
+.col-5{
+    width: 160px;
+}
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.col-5 img:hover{
+    filter: grayscale(0);
+}
+.footer{
+    background: #000;
+    color: rgb(217, 221, 221);
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: rgb(217, 221, 221);
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-1 img{
+    width: 100px;
+    margin-bottom: 20px;
+}
+.footer-col-2{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright{
+    text-align: center;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+/* Styles for screens with a max-width of 800px */
+@media only screen and (max-width: 800px) {
+    nav ul {
+        position: absolute;
+        top: 110px;
+        left: 0;
+        background: rgb(5, 5, 5);
+        width: 100%;
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        color: white;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+.product-details .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+}
+
+.product-details .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.product-details .col {
+    flex: 1;
+    padding: 20px;
+}
+
+.product-details .product-img {
+    width: 100%;
+    max-width: 600px; /* adjust as needed for your image sizes */
+}
+
+.product-details h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.product-details p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.product-details .btn {
+    background-color: #73ecaf;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.product-details .btn:hover {
+    background-color: #558cce;
+}
+.checkout .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkout h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.checkout .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.checkout .col-50 {
+    flex: 0 0 48%;
+    margin-bottom: 20px;
+}
+
+.checkout label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.checkout input[type="text"],
+.checkout input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkout .icon-container {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.checkout .icon-container i {
+    margin-right: 10px;
+}
+
+.checkout .btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #66a5e0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.checkout .btn:hover {
+    background-color: #558cce;
+}
+
+/* Styles for screens with a max-width of 800px */
+@media only screen and (max-width: 800px) {
+    nav ul {
+        position: absolute;
+        top: 110px;
+        left: 0;
+        background: rgb(5, 5, 5);
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out; /* Smooth transition */
+    }
+
+    nav ul.show {
+        display: flex;
+        max-height: 500px; /* Adjust this value based on the number of menu items */
+        transition: max-height 0.3s ease-in; /* Smooth transition */
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        color: white;
+    }
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* style.css */
+.advertisement {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.advertisement .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.advertisement h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.advertisement .intro {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.advertisement .description {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.advertisement .features {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.advertisement .features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.advertisement .features li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.advertisement .cta {
+    margin-top: 20px;
+}
+
+.advertisement .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #66a5e0;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.advertisement .btn:hover {
+    background-color: #f82d2d;
+}
+
+.advertisement .social {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.advertisement .social a {
+    color: #66a5e0;
+    text-decoration: none;
+}
+
+.advertisement .social a:hover {
+    text-decoration: underline;
+}
+/* Full screen styles for the welcome screen */
+#welcome-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(125, 240, 125); /* Or your desired color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 1000;
+    transition: transform 2s ease; /* Matches JS transition duration */
+}
+
+/* Full screen styles for the welcome screen */
+#welcome-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(108, 233, 108); /* Or your desired color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 1000;
+    transition: transform 2s ease; /* Matches JS transition duration */
+}
+
+/* Styles for sliding out */
+#welcome-screen.slide-out-left {
+    transform: translateX(-100%);
+}
+
+/* Styles for the welcome message */
+#welcome-message {
+    text-align: center;
+}
+
+/* Centering the heading and paragraph */
+#welcome-message h1 {
+    font-size: 2.5em; /* Adjust size as needed */
+    margin-bottom: 0.5em;
+}
+
+#welcome-message p {
+    font-size: 1.2em; /* Adjust size as needed */
+    margin-bottom: 1em;
+}
+
+/* Style for the Start Shopping button */
+#start-button {
+    padding: 15px 30px; /* Size of the button */
+    font-size: 18px; /* Font size */
+    font-weight: bold; /* Make the font bold */
+    color: white; /* Text color */
+    background-color: #007BFF; /* Background color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Button hover effect */
+#start-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Button active effect */
+#start-button:active {
+    background-color: #004494; /* Even darker blue when clicked */
+    transform: scale(0.95); /* Slightly shrink the button */
+}
